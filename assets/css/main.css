@@ -236,7 +236,7 @@ img {
 .ds-heading {
   display: inline-block;
   font-weight: 700;
-  color: #f2f4f5;
+  color: #181e20;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
@@ -292,7 +292,7 @@ img {
   color: #373737;
   font-size: 16px;
   padding: 10px 20px;
-  background-color: #02314d;
+  background-color: #fff;
   border: 1px solid #d7d7d7;
   border-radius: 27px;
   margin-right: 15px;
