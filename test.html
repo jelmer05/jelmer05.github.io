@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+
+<body>
+  <SCRIPT>
+    function passWord() {
+      var testV = 1;
+      var pass1 = prompt('Please Enter Your Password', '');
+      while (testV < 3) {
+        if (!pass1)
+          history.go(-1);
+        if (pass1.toLowerCase() == "test") {
+          window.open('http://www.website.com/webpage.html');
+          break;
+        }
+        testV += 1;
+        var pass1 =
+          prompt('Access Denied - Password Incorrect, Please Try Again.', '');
+      }
+      if (pass1.toLowerCase() != "password" & testV == 3)
+        history.go(-1);
+      return " ";
+    }
+  </SCRIPT>
+  <FORM>
+    <input type="button" value="Enter Protected Page" onClick="passWord()">
+  </FORM>
+
+</body>
+
+</html>
