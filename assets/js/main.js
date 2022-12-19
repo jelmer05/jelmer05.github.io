@@ -19,3 +19,8 @@ if (!output.error) {
 } else {
   console.error(output.error);
 }
+
+function dark() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
