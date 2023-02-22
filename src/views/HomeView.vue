@@ -1,9 +1,8 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { useStoryblok } from "@storyblok/vue";
+const story = await useStoryblok("home", { version: "draft" });
 </script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <StoryblokComponent v-if="story" :blok="story.content" />
+  <p>{{ story }}</p>
 </template>
