@@ -4,12 +4,21 @@ import router from "./router";
 import { StoryblokVue, apiPlugin } from "@storyblok/vue";
 
 import "./assets/main.css";
-import hero from "./components/Hero.vue";
+import Hero from "./components/Hero.vue";
+import infoText from "./components/infoText.vue";
 import Page from "./components/Page.vue";
+import Contact from "./components/Contact.vue";
+import Project from "./components/Project.vue";
+import previewProject from "./components/previewProject.vue";
 
 const app = createApp(App);
 
-app.component("hero", hero);
+app.component("Hero", Hero);
+app.component("infoText", infoText);
+app.component("Contact", Contact);
+app.component("Project", Project);
+app.component("previewProject", previewProject);
+
 app.component("Page", Page);
 
 app.use(StoryblokVue, {

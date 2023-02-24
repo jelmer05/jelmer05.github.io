@@ -1,8 +1,7 @@
 <template>
   <div v-editable="blok" class="px-6">
-    {{ blok }}
     <StoryblokComponent
-      v-for="blok in blok.body"
+      v-for="blok in blok.Home"
       :blok="blok"
       :key="blok._uid"
     />
