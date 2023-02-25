@@ -9,6 +9,7 @@ import infoText from "./components/infoText.vue";
 import Page from "./components/Page.vue";
 import Contact from "./components/Contact.vue";
 import Project from "./components/Project.vue";
+import Nav from "./components/Nav.vue";
 import previewProject from "./components/previewProject.vue";
 
 const app = createApp(App);
@@ -17,6 +18,7 @@ app.component("Hero", Hero);
 app.component("infoText", infoText);
 app.component("Contact", Contact);
 app.component("Project", Project);
+app.component("Nav", Nav);
 app.component("previewProject", previewProject);
 
 app.component("Page", Page);
