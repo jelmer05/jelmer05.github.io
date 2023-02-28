@@ -1,10 +1,11 @@
 <script setup>
-defineProps({ blok: Object });
+import { ref } from "vue";
+const { blok } = defineProps({ blok: Object });
 </script>
 <template>
   <section
     v-editable="blok"
-    class="container mx-auto flex flex-col py-2 lg:flex-row"
+    class="container mx-auto flex flex-col pt-2 lg:flex-row"
   >
     <div
       class="info-text flex w-full flex-col justify-center gap-5 lg:w-1/3 xl:w-2/3"
@@ -17,7 +18,7 @@ defineProps({ blok: Object });
             <p>{{ blok.welcomeText }}</p>
           </div>
         </div>
-        <div class="titel-text flex flex-col">
+        <div class="titel-text flex flex-col text-center sm:text-left">
           <h1
             class="mb-6 text-[49px] font-bold leading-10 sm:font-black md:w-[673px]"
           >

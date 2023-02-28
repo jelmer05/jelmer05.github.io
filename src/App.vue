@@ -85,6 +85,5 @@ p {
 }
 h1 {
   font-weight: 900;
-  font-style: italic;
 }
 </style>

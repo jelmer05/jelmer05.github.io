@@ -9,6 +9,7 @@ module.exports = {
         "orange-theme": "#FFBB1C",
         "white-theme": "#F2F4F5",
         "blauw-theme": "#02314D",
+        "hover-orange": "#FFD471",
       },
     },
   },
