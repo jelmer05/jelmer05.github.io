@@ -6,13 +6,15 @@ const { blok } = defineProps({ blok: Object });
 const logoText = ref(blok.titel.charAt(0).toUpperCase());
 </script>
 <template>
-  <header v-editable="blok">
-    <div class="container flex justify-around pt-4">
+  <header v-editable="blok" class="flex justify-center">
+    <div class="container flex justify-between pt-4">
       <div class="logo flex items-center gap-3">
-        <div class="rounded-lg bg-black px-6 py-4 text-center text-white">
-          <h2>{{ logoText }}</h2>
+        <div
+          class="rounded-lg bg-black px-6 py-4 text-center font-black text-white"
+        >
+          <h1>{{ logoText }}</h1>
         </div>
-        <h2 class="upper hidden uppercase text-white sm:block">
+        <h2 class="upper hidden font-bold uppercase text-white sm:block">
           {{ blok.titel }}
         </h2>
       </div>
