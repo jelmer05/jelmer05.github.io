@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="">
+  <div v-editable="blok">
     <StoryblokComponent
       v-for="blok in blok.Home"
       :blok="blok"
