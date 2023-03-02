@@ -32,4 +32,3 @@ const logoText = ref(blok.titel.charAt(0).toUpperCase());
     </div>
   </header>
 </template>
-<style scoped></style>
