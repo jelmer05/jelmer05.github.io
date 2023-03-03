@@ -1,36 +1,5 @@
 <script setup>
-import { ref, computed, watchEffect } from "vue";
-
 const { blok } = defineProps({ blok: Object });
-
-const boldText = ref(false);
-
-const boldCheck = computed(() => {
-  let hasbold = false;
-  for (let content of blok.content.content) {
-    for (let text of content.content) {
-      let hasboldInner = false;
-      for (let marks of text.marks) {
-        if (marks.type === "bold") {
-          hasboldInner = true;
-          break;
-        }
-      }
-      if (hasboldInner) {
-        hasbold = true;
-        break;
-      }
-    }
-    if (hasbold) {
-      break;
-    }
-  }
-  return hasbold;
-});
-
-watchEffect(() => {
-  boldText.value = boldCheck.value;
-});
 </script>
 
 <template>
