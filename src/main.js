@@ -10,6 +10,7 @@ import Page from "./components/Page.vue";
 import Contact from "./components/Contact.vue";
 import Project from "./components/Project.vue";
 import Nav from "./components/Nav.vue";
+import Footer from "./components/Footer.vue";
 import previewProject from "./components/previewProject.vue";
 
 const app = createApp(App);
@@ -20,6 +21,7 @@ app.component("Contact", Contact);
 app.component("Project", Project);
 app.component("Nav", Nav);
 app.component("previewProject", previewProject);
+app.component("Footer", Footer);
 
 app.component("Page", Page);
 
