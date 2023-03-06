@@ -10,18 +10,24 @@ defineProps({ blok: Object });
       <h1 class="text-[25px] font-bold sm:text-[35px]">{{ blok.Title }}</h1>
       <p>{{ blok.slug }}</p>
       <div class="flex items-center justify-center gap-2">
-        <img :src="blok.icon.filename" :alt="blok.icon.alt" class="h-6 w-6" />
+        <img
+          :src="blok.icon.filename"
+          :alt="blok.icon.alt"
+          class="h-6 w-6 opacity-50"
+        />
         <button
-          class="h-[42px] w-[210px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-medium text-white transition hover:bg-hover-orange"
+          class="h-[52px] w-[250px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-medium text-white transition hover:bg-hover-orange"
         >
-          <p class="w-full">
-            {{ blok.CTA }}
-          </p>
+          <a :href="`mailto:${blok.mailTo}`">
+            <p class="w-full font-bold">
+              {{ blok.CTA }}
+            </p>
+          </a>
         </button>
         <img
           :src="blok.icon.filename"
           :alt="blok.icon.alt"
-          class="h-6 w-6 scale-x-[-1]"
+          class="h-6 w-6 scale-x-[-1] opacity-50"
         />
       </div>
     </section>

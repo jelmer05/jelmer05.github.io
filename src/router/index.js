@@ -13,7 +13,6 @@ const router = createRouter({
     },
     {
       path: "/project/",
-      name: "project",
       redirect: "/",
     },
     {

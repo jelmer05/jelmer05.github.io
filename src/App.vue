@@ -6,6 +6,7 @@ import Nav from "./components/Nav.vue";
 
 <template>
   <div class="relative z-[-10] w-full bg-black-theme">
+    <Nav />
     <Suspense>
       <RouterView />
     </Suspense>

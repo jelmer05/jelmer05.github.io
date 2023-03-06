@@ -1,7 +1,6 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useStoryblok } from "@storyblok/vue";
-
 const route = useRoute();
 
 let story = null;
@@ -17,6 +16,7 @@ try {
 }
 </script>
 <template>
+  <nav />
   <main>
     <StoryblokComponent v-if="story !== null" :blok="story.content" />
     <div
