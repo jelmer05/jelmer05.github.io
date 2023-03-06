@@ -10,9 +10,11 @@ defineProps({ blok: Object });
       <div
         class="flex w-3/5 flex-col justify-between gap-4 self-start md:flex-row"
       >
-        <router-link to="/" class="flex gap-2 hover:animate-pulse"
-          ><img src="../assets/icons/Arrow 1.svg" alt="icon" class="" />
-          <p class="w-96">back to home</p>
+        <router-link
+          to="/"
+          class="ml-10 flex items-center gap-2 hover:animate-pulse"
+          ><img src="../assets/icons/Arrow 1.svg" alt="icon" class="w-[20px]" />
+          <p class="w-96 text-xs">back to home</p>
         </router-link>
 
         <h1 class="text-[35px] font-bold">

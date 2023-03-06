@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="fixed w-full bg-black-theme">
+  <div class="fixed z-20 w-full bg-black-theme">
     <header v-editable="blok" class="flex justify-center">
       <div class="container flex justify-between pt-4">
         <div class="logo flex items-center gap-3">
