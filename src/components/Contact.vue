@@ -11,6 +11,7 @@ defineProps({ blok: Object });
       <p>{{ blok.slug }}</p>
       <div class="flex items-center justify-center gap-2">
         <img
+          v-if="blok.icon.filename"
           :src="blok.icon.filename"
           :alt="blok.icon.alt"
           class="h-6 w-6 opacity-50"
@@ -25,6 +26,7 @@ defineProps({ blok: Object });
           </a>
         </button>
         <img
+          v-if="blok.icon.filename"
           :src="blok.icon.filename"
           :alt="blok.icon.alt"
           class="h-6 w-6 scale-x-[-1] opacity-50"

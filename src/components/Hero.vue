@@ -46,7 +46,7 @@ const { blok } = defineProps({ blok: Object });
         </div>
       </div>
     </div>
-    <div class="jelmerFoto relative w-full sm:mt-[-100px] lg:mt-0">
+    <div class="jelmerFoto relative w-full sm:mt-[-100px] lg:mt-[16px]">
       <img :src="blok.heroImg.filename" :alt="blok.heroImg.alt" class="" />
       <img
         src="https://a.storyblok.com/f/196239/354x353/4c01ffa1ec/ellipse-2.svg"
