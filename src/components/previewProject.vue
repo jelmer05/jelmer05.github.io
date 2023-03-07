@@ -1,8 +1,31 @@
 <script setup>
-defineProps({ blok: Object });
+import { RouterLink } from "vue-router";
+const { blok } = defineProps({ blok: Object });
+console.log(blok);
 </script>
 <template>
-  <div v-editable="blok" class="py-2">
-    <h2>test</h2>
-  </div>
+  <section v-editable="blok" class="container mx-auto py-4">
+    <h1 class="p-6 text-[35px] font-bold">{{ blok.titel }}</h1>
+    <div
+      class="project container flex flex-col flex-wrap items-center justify-around gap-5 sm:flex-row"
+    >
+      <div v-for="project in blok.projecten" class="w-2/3 sm:w-1/3">
+        <img
+          :src="project.content.previewImg.filename"
+          alt=""
+          class="rounded-lg"
+        />
+        <div class="text-container flex w-full justify-between gap-5 p-3">
+          <h2>{{ project.name }}</h2>
+          <RouterLink :to="project.full_slug">
+            <img
+              src="../assets/icons/Arrow 1.svg"
+              alt="icon"
+              class="scale-x-[-1] rounded-full bg-orange-theme p-2 transition-all hover:bg-hover-orange"
+            />
+          </RouterLink>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>

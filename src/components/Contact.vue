@@ -5,7 +5,7 @@ defineProps({ blok: Object });
   <div class="container-fluid bg-blauw-theme">
     <section
       v-editable="blok"
-      class="contact container mx-auto flex flex-col items-center gap-6 py-4"
+      class="contact container mx-auto flex flex-col items-center gap-6 py-6"
     >
       <h1 class="text-[25px] font-bold sm:text-[35px]">{{ blok.Title }}</h1>
       <p>{{ blok.slug }}</p>

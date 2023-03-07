@@ -1,8 +1,15 @@
 <script setup>
 import { useStoryblok } from "@storyblok/vue";
-const story = await useStoryblok("home", {
-  version: "draft",
-});
+const story = await useStoryblok(
+  "home",
+  {
+    version: "draft",
+    resolve_relations: "previewProject.projecten",
+  },
+  {
+    resolveRelations: ["previewProject.projecten"],
+  }
+);
 </script>
 <template>
   <main>

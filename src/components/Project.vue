@@ -5,19 +5,15 @@ defineProps({ blok: Object });
 <template>
   <section v-editable="blok" class="flex flex-col gap-6 py-2">
     <div
-      class="header container-fluid my-4 mx-auto flex flex-col items-center justify-center gap-6 p-5"
+      class="header container my-4 mx-auto flex flex-col items-center justify-center gap-6 p-5"
     >
-      <div
-        class="flex w-3/5 flex-col justify-between gap-4 self-start md:flex-row"
-      >
-        <router-link
-          to="/"
-          class="ml-10 flex items-center gap-2 hover:animate-pulse"
+      <div class="flex w-3/5 flex-col justify-between gap-4 self-start">
+        <router-link to="/" class="flex items-center gap-2 hover:animate-pulse"
           ><img src="../assets/icons/Arrow 1.svg" alt="icon" class="w-[20px]" />
           <p class="w-96 text-xs">back to home</p>
         </router-link>
 
-        <h1 class="text-[35px] font-bold">
+        <h1 class="text-[30px] font-bold sm:text-[35px]">
           <a :href="blok.Link.url" :target="blok.Link.target">{{
             blok.title
           }}</a>
@@ -48,7 +44,7 @@ defineProps({ blok: Object });
       </div>
     </div>
     <main class="container mx-auto">
-      <h1 class="text-[25px] font-bold">Over dit project</h1>
+      <h1 class="p-2 text-[25px] font-bold">Over dit project</h1>
       <div class="text p-2 leading-7" v-for="content in blok.mainText.content">
         <p>
           <span
