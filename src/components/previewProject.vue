@@ -1,7 +1,11 @@
 <script setup>
+import { ref } from "vue";
 import { RouterLink } from "vue-router";
 const { blok } = defineProps({ blok: Object });
-console.log(blok);
+
+const projecten = ref(blok.projecten.length + 3);
+
+console.log(projecten.value);
 </script>
 <template>
   <section v-editable="blok" class="container mx-auto py-4">
@@ -16,7 +20,7 @@ console.log(blok);
           class="rounded-lg"
         />
         <div class="text-container flex w-full justify-between gap-5 p-3">
-          <h2>{{ project.name }}</h2>
+          <h2 class="">{{ project.name }}</h2>
           <RouterLink :to="project.full_slug">
             <img
               src="../assets/icons/Arrow 1.svg"

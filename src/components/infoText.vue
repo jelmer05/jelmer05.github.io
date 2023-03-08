@@ -3,7 +3,7 @@ const { blok } = defineProps({ blok: Object });
 </script>
 
 <template>
-  <section v-editable="blok" class="w-screen bg-blauw-theme py-6">
+  <section v-editable="blok" class="w-full bg-blauw-theme py-6">
     <div class="title container mx-auto">
       <div class="p-6">
         <h1 class="text-[35px] font-bold">{{ blok.title }}</h1>

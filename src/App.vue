@@ -1,15 +1,29 @@
 <script setup>
-import { RouterView } from "vue-router";
-
+import { onMounted, onUnmounted, ref } from "vue";
 import Nav from "./components/Nav.vue";
 import Footer from "./components/Footer.vue";
+const scrollPosition = ref(false);
+
+const handleScroll = () => {
+  scrollPosition.value = window.scrollY;
+};
+
+// voeg een event listener toe voor het scrollen
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+// verwijder de event listener wanneer het component wordt unmounted
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
   <div class="relative z-[-10] w-full bg-black-theme">
-    <Nav />
+    <Nav :isScrolled="scrollPosition > 30" />
     <Suspense>
-      <div class="pt-[80px]">
+      <div class="pt-[144px]">
         <RouterView />
       </div>
     </Suspense>
