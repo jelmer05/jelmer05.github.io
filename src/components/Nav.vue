@@ -6,7 +6,7 @@ const { isScrolled } = defineProps({ isScrolled: Boolean });
     class="fixed z-20 w-full bg-black-theme duration-300  transition-all"
     :class="{ 'p-2': isScrolled === true }, { 'p-8': isScrolled === false }"
   >
-    <header v-editable="blok" class="flex justify-center">
+    <header class="flex justify-center">
       <div class="container flex justify-between pt-4">
         <div class="logo flex items-center gap-3">
           <div
