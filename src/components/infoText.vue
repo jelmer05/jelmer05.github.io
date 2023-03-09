@@ -24,7 +24,9 @@ const { blok } = defineProps({ blok: Object });
         <button
           class="h-[62px] w-[260px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-bold text-white transition hover:bg-hover-orange"
         >
-          {{ blok.callToAction }}
+          <a :href="blok.CV.filename" target="_blank">
+            {{ blok.callToAction }}
+          </a>
         </button>
       </div>
     </div>

@@ -1,5 +1,7 @@
 <script setup>
+import {RouterLink} from 'vue-router'
 const { isScrolled } = defineProps({ isScrolled: Boolean });
+
 </script>
 <template>
   <div
@@ -8,16 +10,19 @@ const { isScrolled } = defineProps({ isScrolled: Boolean });
   >
     <header class="flex justify-center">
       <div class="container flex justify-between pt-4">
-        <div class="logo flex items-center gap-3">
-          <div
-            class="rounded-lg bg-black px-6 py-4 text-center font-black text-white"
-          >
-            <h1>J</h1>
+        <RouterLink to="/">
+
+          <div class="logo flex items-center gap-3">
+            <div
+              class="rounded-lg bg-black px-6 py-4 text-center font-black text-white"
+            >
+              <h1>J</h1>
+            </div>
+            <h2 class="upper hidden font-bold uppercase text-white sm:block">
+              Jelmer van der veen
+            </h2>
           </div>
-          <h2 class="upper hidden font-bold uppercase text-white sm:block">
-            Jelmer van der veen
-          </h2>
-        </div>
+        </RouterLink>
         <div class="icons flex items-center gap-4">
           <a href="https://github.com/jelmer05" target="_blank">
             <img

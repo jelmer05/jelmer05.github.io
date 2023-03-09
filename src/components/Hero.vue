@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from "vue";
 const { blok } = defineProps({ blok: Object });
 </script>
 <template>
@@ -34,7 +33,7 @@ const { blok } = defineProps({ blok: Object });
           >
             {{ blok.ideeen }}+
           </div>
-          <p class="text-center">ideeën</p>
+          <p class="text-center">Ideeën</p>
         </div>
         <div class="data my-10 flex w-20 flex-col justify-center gap-1">
           <div
@@ -42,7 +41,7 @@ const { blok } = defineProps({ blok: Object });
           >
             {{ blok.ideeen }}+
           </div>
-          <p class="text-center">Projecten</p>
+          <p class="text-center">projecten</p>
         </div>
       </div>
     </div>
@@ -51,7 +50,7 @@ const { blok } = defineProps({ blok: Object });
       <img
         src="https://a.storyblok.com/f/196239/354x353/4c01ffa1ec/ellipse-2.svg"
         alt="ellipse"
-        class="lg-w-52 xl:w-50 animate absolute top-[5%] right-[20%] z-[-2] w-28 sm:w-52 lg:top-[6%] lg:right-[15%] 2xl:top-[5%] 2xl:right-[20%] 2xl:w-64"
+        class="animate absolute top-[5%] right-[20%] z-[-2] w-28 sm:w-52 lg:top-[6%] lg:right-[15%] lg:w-52 2xl:top-[5%] 2xl:right-[20%] 2xl:w-64"
       />
       <img
         src="https://a.storyblok.com/f/196239/354x353/d000ca7ec0/ellipse-1.svg"
