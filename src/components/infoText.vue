@@ -8,7 +8,14 @@ const { blok } = defineProps({ blok: Object });
       <div class="p-6">
         <h1 class="text-[35px] font-bold">{{ blok.title }}</h1>
       </div>
-      <div class="text p-6 leading-7" v-for="content in blok.content.content">
+      <div
+        v-aos
+        data-aos="zoom-in"
+        data-aos-once="true"
+        data-aos-duration="1000"
+        class="text p-6 leading-7"
+        v-for="content in blok.content.content"
+      >
         <p>
           <span
             :class="{
@@ -21,13 +28,13 @@ const { blok } = defineProps({ blok: Object });
         </p>
       </div>
       <div class="container mt-4 flex justify-center">
-        <button
-          class="h-[62px] w-[260px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-bold text-white transition hover:bg-hover-orange"
-        >
-          <a :href="blok.CV.filename" target="_blank">
+        <a :href="blok.CV.filename" target="_blank">
+          <button
+            class="h-[62px] w-[260px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-bold text-white transition hover:bg-hover-orange"
+          >
             {{ blok.callToAction }}
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   </section>

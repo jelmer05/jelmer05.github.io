@@ -3,9 +3,9 @@ import { RouterLink } from "vue-router";
 defineProps({ blok: Object });
 </script>
 <template>
-  <section v-editable="blok" class="flex flex-col gap-6 py-2">
+  <section v-editable="blok" class="flex flex-col gap-6">
     <div
-      class="header container my-4 mx-auto flex flex-col items-center justify-center gap-6 p-5"
+      class="header container my-4 mx-auto flex flex-col items-center justify-center gap-6 p-3"
     >
       <div class="flex w-3/5 flex-col justify-between gap-4 self-start">
         <router-link to="/" class="flex items-center gap-2 hover:animate-pulse"
@@ -21,7 +21,7 @@ defineProps({ blok: Object });
       </div>
       <div class="flex justify-center">
         <video
-          class="video aspect-video w-10/12 self-center rounded-lg sm:w-6/12"
+          class="video scale-up-center aspect-video w-10/12 self-center rounded-lg sm:w-6/12"
           autoplay=""
           loop=""
           muted=""
@@ -31,6 +31,7 @@ defineProps({ blok: Object });
         </video>
       </div>
     </div>
+
     <div
       class="technieken container mx-auto flex flex-col items-center justify-center"
     >

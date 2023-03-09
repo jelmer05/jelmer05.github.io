@@ -7,6 +7,10 @@ const { blok } = defineProps({ blok: Object });
   <section v-editable="blok" id="projects" class="container mx-auto py-4">
     <h1 class="p-6 text-[35px] font-bold">{{ blok.titel }}</h1>
     <div
+      v-aos
+      data-aos="zoom-in"
+      data-aos-once="true"
+      data-aos-duration="1000"
       class="project container flex flex-col flex-wrap items-center justify-around gap-5 sm:flex-row"
     >
       <div v-for="project in blok.projecten" class="w-2/3 sm:w-1/3">

@@ -2,6 +2,8 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import { StoryblokVue, apiPlugin } from "@storyblok/vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./assets/main.css";
 import Hero from "./components/Hero.vue";
@@ -32,5 +34,13 @@ app.use(StoryblokVue, {
 });
 
 app.use(router);
+
+app.directive("aos", {
+  mounted(el) {
+    AOS.init({
+      // options
+    });
+  },
+});
 
 app.mount("#app");
