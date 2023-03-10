@@ -9,7 +9,11 @@ defineProps({ blok: Object });
     >
       <div class="flex w-3/5 flex-col justify-between gap-4 self-start">
         <router-link to="/" class="flex items-center gap-2 hover:animate-pulse"
-          ><img src="../assets/icons/Arrow 1.svg" alt="icon" class="w-[20px]" />
+          ><img
+            src="https://a.storyblok.com/f/196239/30x24/8b7ac5d55c/arrow-1.svg"
+            alt="icon"
+            class="w-[20px]"
+          />
           <p class="w-96 text-xs">back to home</p>
         </router-link>
 
