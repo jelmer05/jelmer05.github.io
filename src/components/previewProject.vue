@@ -25,7 +25,7 @@ const { blok } = defineProps({ blok: Object });
           <h2 class="max-w-[70%]">{{ project.name }}</h2>
           <RouterLink :to="project.full_slug">
             <img
-              src="url('https://a.storyblok.com/f/196239/30x24/8b7ac5d55c/arrow-1.svg')"
+              src="https://a.storyblok.com/f/196239/30x24/8b7ac5d55c/arrow-1.svg"
               alt="icon"
               class="max-w-[100px] scale-x-[-1] rounded-full bg-orange-theme p-3 transition-all hover:bg-hover-orange"
             />
