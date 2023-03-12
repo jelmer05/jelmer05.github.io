@@ -31,15 +31,15 @@ onUnmounted(() => {
   </div>
 </template>
 <style>
-@font-face {
+/* @font-face {
   font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Bold.eot");
   src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"),
     url("../assets/font/AvenirNextCyr-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../assets/font/AvenirNextCyr-Bold.woff2") format("woff2"),
-    url("../assets/font/AvenirNextCyr-Bold.woff") format("woff"),
-    url("../assets/font/AvenirNextCyr-Bold.ttf") format("truetype");
+    url("../assets/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("../assets/AvenirNextCyr-Bold.woff") format("woff"),
+    url("../assets/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -48,11 +48,10 @@ onUnmounted(() => {
   font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Italic.eot");
   src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"),
-    url("../assets/font/AvenirNextCyr-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../assets/font/AvenirNextCyr-Italic.woff2") format("woff2"),
-    url("../assets/font/AvenirNextCyr-Italic.woff") format("woff"),
-    url("../assets/font/AvenirNextCyr-Italic.ttf") format("truetype");
+    url("../assets/AvenirNextCyr-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../assets/AvenirNextCyr-Italic.woff2") format("woff2"),
+    url("../assets/AvenirNextCyr-Italic.woff") format("woff"),
+    url("../assets/AvenirNextCyr-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
@@ -73,11 +72,11 @@ onUnmounted(() => {
   font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-HeavyItalic.eot");
   src: local("Avenir Next Cyr Heavy Italic"), local("AvenirNextCyr-HeavyItalic"),
-    url("../assets/font/AvenirNextCyr-HeavyItalic.eot?#iefix")
+    url("../assets/AvenirNextCyr-HeavyItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../assets/font/AvenirNextCyr-HeavyItalic.woff2") format("woff2"),
-    url("../assets/font/AvenirNextCyr-HeavyItalic.woff") format("woff"),
-    url("../assets/font/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
+    url("../assets/AvenirNextCyr-HeavyItalic.woff2") format("woff2"),
+    url("../assets/AvenirNextCyr-HeavyItalic.woff") format("woff"),
+    url("../assets/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
@@ -86,14 +85,14 @@ onUnmounted(() => {
   font-family: "Avenir Next Cyr";
   src: url("AvenirNextCyr-Regular.eot");
   src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"),
-    url("../assets/font/AvenirNextCyr-Regular.eot?#iefix")
+    url("../assets/AvenirNextCyr-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../assets/font/AvenirNextCyr-Regular.woff2") format("woff2"),
-    url("../assets/font/AvenirNextCyr-Regular.woff") format("woff"),
-    url("../assets/font/AvenirNextCyr-Regular.ttf") format("truetype");
+    url("../assets/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("../assets/AvenirNextCyr-Regular.woff") format("woff"),
+    url("../assets/AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 h1,
 h2,
