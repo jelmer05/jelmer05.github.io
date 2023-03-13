@@ -18,4 +18,7 @@ export default defineConfig({
       cert: "./localhost.pem",
     },
   },
+  build: {
+    sourcemap: true,
+  },
 });
