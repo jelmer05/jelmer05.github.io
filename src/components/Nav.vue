@@ -4,23 +4,6 @@ const { isScrolled } = defineProps({ isScrolled: Boolean });
 
 </script>
 <template>
-<<<<<<< HEAD
-  <header v-editable="blok" class="flex justify-center">
-    <div class="container flex justify-between pt-4">
-      <div class="logo flex items-center gap-3">
-        <div
-          class="rounded-lg bg-black px-6 py-4 text-center font-black text-white"
-        >
-          <h1>{{ logoText }}</h1>
-        </div>
-        <h2 class="upper hidden font-bold uppercase text-white sm:block">
-          {{ blok.titel }}
-        </h2>
-      </div>
-      <div class="icons flex items-center gap-4">
-        <div v-for="icon in blok.Icons">
-          <a :href="icon.source" target="_blank">
-=======
   <div
     class="fixed z-20 w-full bg-black-theme duration-300  transition-all"
     :class="{ 'p-2': isScrolled === true }, { 'p-8': isScrolled === false }"
@@ -42,7 +25,6 @@ const { isScrolled } = defineProps({ isScrolled: Boolean });
         </RouterLink>
         <div class="icons flex items-center gap-4">
           <a href="https://github.com/jelmer05" target="_blank">
->>>>>>> origin/Website
             <img
               src="../assets/icons/github.svg"
               alt="github"
