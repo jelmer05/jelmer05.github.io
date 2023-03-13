@@ -1,36 +1,5 @@
 <script setup>
-import { ref, computed, watchEffect } from "vue";
-
 const { blok } = defineProps({ blok: Object });
-
-const boldText = ref(false);
-
-const boldCheck = computed(() => {
-  let hasbold = false;
-  for (let content of blok.content.content) {
-    for (let text of content.content) {
-      let hasboldInner = false;
-      for (let marks of text.marks) {
-        if (marks.type === "bold") {
-          hasboldInner = true;
-          break;
-        }
-      }
-      if (hasboldInner) {
-        hasbold = true;
-        break;
-      }
-    }
-    if (hasbold) {
-      break;
-    }
-  }
-  return hasbold;
-});
-
-watchEffect(() => {
-  boldText.value = boldCheck.value;
-});
 </script>
 
 <template>
@@ -40,7 +9,12 @@ watchEffect(() => {
         <h1 class="text-[35px] font-bold">{{ blok.title }}</h1>
       </div>
       <div class="text p-6 leading-7" v-for="content in blok.content.content">
-        <p>
+        <p
+          v-aos
+          data-aos="zoom-in"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
           <span
             :class="{
               'font-bold': text.marks && text.marks[0].type === 'bold',

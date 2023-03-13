@@ -29,6 +29,8 @@ defineProps({ blok: Object });
           autoplay=""
           loop=""
           muted=""
+          webkit-playsinline
+          playsinline
         >
           Je browser ondersteund helaas geen video.
           <source :src="blok.mainBanner.filename" />
