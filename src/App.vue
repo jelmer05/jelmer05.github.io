@@ -20,7 +20,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="relative z-[-10] w-full bg-black-theme">
+  <div class="relative z-[-10] w-full overscroll-none bg-black-theme">
     <Nav :isScrolled="scrollPosition > 30" />
     <Suspense>
       <div class="pt-[144px]">
