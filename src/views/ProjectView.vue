@@ -9,7 +9,7 @@ const searchProject = route.params.slug;
 
 try {
   story = await useStoryblok(`project/${route.params.slug}`, {
-    version: "draft",
+    version: "published",
   });
 } catch (error) {
   console.error(`project ${searchProject} not found`);

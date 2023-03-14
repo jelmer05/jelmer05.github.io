@@ -3,7 +3,7 @@ import { useStoryblok } from "@storyblok/vue";
 const story = await useStoryblok(
   "home",
   {
-    version: "draft",
+    version: "published",
     resolve_relations: "previewProject.projecten",
   },
   {
