@@ -27,7 +27,7 @@ app.component("Page", Page);
 
 app.use(StoryblokVue, {
   accessToken: "QWGzMMqBPxmbAWvxNNUf2Att",
-
+  bridge: true, // enable the bridge
   bridge: process.env.NODE_ENV !== "production", // optimizes by excluding the bridge on production
 
   use: [apiPlugin],
