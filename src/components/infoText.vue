@@ -8,13 +8,15 @@ const { blok } = defineProps({ blok: Object });
       <div class="p-6">
         <h1 class="text-[35px] font-bold">{{ blok.title }}</h1>
       </div>
-      <div class="text p-6 leading-7" v-for="content in blok.content.content">
-        <p
-          v-aos
-          data-aos="zoom-in"
-          data-aos-once="true"
-          data-aos-duration="1000"
-        >
+      <div
+        class="text p-6 leading-7"
+        v-for="content in blok.content.content"
+        v-aos
+        data-aos="zoom-in"
+        data-aos-once="true"
+        data-aos-duration="1000"
+      >
+        <p>
           <span
             :class="{
               'font-bold': text.marks && text.marks[0].type === 'bold',
