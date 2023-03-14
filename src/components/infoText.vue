@@ -26,11 +26,13 @@ const { blok } = defineProps({ blok: Object });
         </p>
       </div>
       <div class="container mt-4 flex justify-center">
-        <button
-          class="h-[62px] w-[260px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-bold text-white transition hover:bg-hover-orange"
-        >
-          {{ blok.callToAction }}
-        </button>
+        <a :href="blok.CV.filename" target="_blank">
+          <button
+            class="h-[62px] w-[260px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-bold text-white transition hover:bg-hover-orange"
+          >
+            {{ blok.callToAction }}
+          </button>
+        </a>
       </div>
     </div>
   </section>
