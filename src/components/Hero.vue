@@ -1,4 +1,5 @@
 <script setup>
+import CountUp from "vue-countup-v3";
 const { blok } = defineProps({ blok: Object });
 </script>
 <template>
@@ -31,7 +32,8 @@ const { blok } = defineProps({ blok: Object });
           <div
             class="data-1 flex h-16 w-16 items-center justify-center self-center rounded-full bg-white-theme"
           >
-            {{ blok.ideeen }}+
+            <count-up :end-val="blok.ideeen" class="font-bold"></count-up>
+            <span class="font-bold">+</span>
           </div>
           <p class="text-center">Ideeën</p>
         </div>
@@ -39,9 +41,15 @@ const { blok } = defineProps({ blok: Object });
           <div
             class="data-2 flex h-16 w-16 items-center justify-center self-center rounded-full bg-white-theme"
           >
-            {{ blok.project }}+
+            <count-up
+              :end-val="blok.project"
+              :duration="3"
+              :start-val="-40"
+              class="font-bold"
+            ></count-up>
+            <span class="font-bold">+</span>
           </div>
-          <p class="text-center">projecten</p>
+          <p class="text-center">Projecten</p>
         </div>
       </div>
     </div>
