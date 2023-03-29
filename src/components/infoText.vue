@@ -1,5 +1,9 @@
 <script setup>
+import { computed } from "vue";
+import { renderRichText } from "@storyblok/vue";
 const { blok } = defineProps({ blok: Object });
+
+const articleContent = computed(() => renderRichText(blok.content));
 </script>
 
 <template>
@@ -10,13 +14,16 @@ const { blok } = defineProps({ blok: Object });
       </div>
       <div
         class="text p-6 leading-7"
-        v-for="content in blok.content.content"
         v-aos
         data-aos="zoom-in"
         data-aos-once="true"
         data-aos-duration="1000"
       >
-        <p>
+        <div
+          v-html="articleContent"
+          class="text flex flex-col gap-5 p-6 leading-7"
+        ></div>
+        <!-- <p>
           <span
             v-for="text in content.content"
             :class="{
@@ -32,7 +39,7 @@ const { blok } = defineProps({ blok: Object });
           >
             {{ text.text }}
           </span>
-        </p>
+        </p> -->
       </div>
       <div class="container mt-4 flex justify-center">
         <a :href="blok.CV.filename" target="_blank">
