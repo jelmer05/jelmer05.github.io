@@ -18,7 +18,9 @@ const story = await useStoryblok(
       v-else
       class="flex h-[73vh] flex-col items-center justify-center gap-5"
     >
-      <h1 class="text-center">network error try to load again</h1>
+      <h1 class="text-center">
+        Netwerk error, probeer de pagina opnieuw te laden.
+      </h1>
       <div role="status">
         <svg
           aria-hidden="true"
