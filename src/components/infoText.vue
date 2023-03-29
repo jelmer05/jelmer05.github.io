@@ -18,13 +18,20 @@ const { blok } = defineProps({ blok: Object });
       >
         <p>
           <span
-            :class="{
-              'font-bold': text.marks && text.marks[0].type === 'bold',
-              italic: text.marks && text.marks[0].type === 'italic',
-            }"
             v-for="text in content.content"
-            >{{ text.text }}</span
+            :class="{
+              'font-bold':
+                text.marks &&
+                (text.marks[0].type === 'bold' ||
+                  text.marks[1]?.type === 'bold'),
+              italic:
+                text.marks &&
+                (text.marks[0].type === 'italic' ||
+                  text.marks[1]?.type === 'italic'),
+            }"
           >
+            {{ text.text }}
+          </span>
         </p>
       </div>
       <div class="container mt-4 flex justify-center">
