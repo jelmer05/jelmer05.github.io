@@ -42,6 +42,7 @@ onUnmounted(() => {
     url("../assets/AvenirNextCyr-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -54,6 +55,7 @@ onUnmounted(() => {
     url("../assets/AvenirNextCyr-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -66,6 +68,7 @@ onUnmounted(() => {
     url("AvenirNextCyr-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -79,6 +82,7 @@ onUnmounted(() => {
     url("../assets/AvenirNextCyr-HeavyItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -92,6 +96,7 @@ onUnmounted(() => {
     url("../assets/AvenirNextCyr-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 h1,
