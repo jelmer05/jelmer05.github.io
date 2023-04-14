@@ -11,12 +11,19 @@ import infoText from "./components/infoText.vue";
 import Page from "./components/Page.vue";
 import Contact from "./components/Contact.vue";
 import Project from "./components/Project.vue";
+import Column from "./components/Column.vue";
+import ImgBlok from "./components/ImgBlok.vue";
+import Text from "./components/Text.vue";
 
 import previewProject from "./components/previewProject.vue";
 
 const app = createApp(App);
 
 app.component("Hero", Hero);
+app.component("Column", Column);
+app.component("ImgBlok", ImgBlok);
+app.component("Text", Text);
+
 app.component("infoText", infoText);
 app.component("Contact", Contact);
 app.component("Project", Project);
