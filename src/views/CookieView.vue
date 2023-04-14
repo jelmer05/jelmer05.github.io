@@ -11,4 +11,6 @@ export default {
   },
 };
 </script>
-<template></template>
+<template>
+  <div class="bg-black-theme"></div>
+</template>
