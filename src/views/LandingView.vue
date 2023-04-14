@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useStoryblok } from "@storyblok/vue";
+import PagenotFound from "./pageNotFoundView.vue";
 const route = useRoute();
 
 let story = null;
@@ -19,4 +20,5 @@ console.log(story);
 </script>
 <template>
   <StoryblokComponent v-if="story" :blok="story.content" />
+  <PagenotFound v-else />
 </template>

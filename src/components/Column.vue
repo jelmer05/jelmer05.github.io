@@ -3,5 +3,5 @@ const { blok } = defineProps({ blok: Object });
 </script>
 
 <template>
-  <StoryblokComponent v-for="blok in blok.Page" :blok="blok" :key="blok._uid" />
+  <h1>hoi test</h1>
 </template>
