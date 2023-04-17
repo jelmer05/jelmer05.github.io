@@ -14,7 +14,7 @@ import Contact from "./components/Contact.vue";
 import Project from "./components/Project.vue";
 import Column from "./components/Column.vue";
 import ImgBlok from "./components/ImgBlok.vue";
-import Text from "./components/Text.vue";
+import Tekst from "./components/Tekst.vue";
 
 import previewProject from "./components/previewProject.vue";
 
@@ -23,7 +23,7 @@ const app = createApp(App);
 app.component("Hero", Hero);
 app.component("Column", Column);
 app.component("ImgBlok", ImgBlok);
-app.component("Text", Text);
+app.component("Tekst", Tekst);
 
 app.component("infoText", infoText);
 app.component("Contact", Contact);
