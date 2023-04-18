@@ -3,9 +3,6 @@ name: Dependency Update
 on:
   schedule:
     - cron: '0 0 * * *' # Runs every day at midnight
-  push:
-    branches: [main]
-
 jobs:
   update-dependencies:
     runs-on: ubuntu-latest
