@@ -23,7 +23,7 @@ jobs:
       run: npm install
 
     - name: Check for Updates
-      run: ncu -u
+      run: npx npm-check-updates -u
 
     - name: Commit Changes
       run: |
