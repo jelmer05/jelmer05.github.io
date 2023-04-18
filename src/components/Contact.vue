@@ -19,7 +19,12 @@ defineProps({ blok: Object });
         <button
           class="h-[52px] w-[250px] rounded-[86px] bg-orange-theme py-[11px] px-[76px] font-medium text-white transition hover:bg-hover-orange"
         >
-          <a :href="`mailto:${blok.mailTo}`">
+          <a :href="`mailto:${blok.mailTo}`" v-if="blok.mailTo">
+            <p class="w-full font-bold">
+              {{ blok.CTA }}
+            </p>
+          </a>
+          <a :href="blok.CV.filename" target="_blank" v-else-if="blok.CV">
             <p class="w-full font-bold">
               {{ blok.CTA }}
             </p>
