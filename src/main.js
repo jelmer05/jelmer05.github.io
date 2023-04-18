@@ -15,6 +15,7 @@ import Project from "./components/Project.vue";
 import Column from "./components/Column.vue";
 import ImgBlok from "./components/ImgBlok.vue";
 import Tekst from "./components/Tekst.vue";
+import Logos from "./components/Logos.vue";
 
 import previewProject from "./components/previewProject.vue";
 
@@ -24,6 +25,7 @@ app.component("Hero", Hero);
 app.component("Column", Column);
 app.component("ImgBlok", ImgBlok);
 app.component("Tekst", Tekst);
+app.component("Logos", Logos);
 
 app.component("infoText", infoText);
 app.component("Contact", Contact);
