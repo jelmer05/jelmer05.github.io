@@ -4,7 +4,7 @@ const { blok } = defineProps({ blok: Object });
 
 <template>
   <section
-    class="flex w-4/5 flex-col justify-between gap-3 self-center md:flex-row"
+    class="flex w-4/5 flex-col justify-between gap-3 self-center py-3 md:flex-row"
   >
     <div class="flex w-full items-center md:w-5/12">
       <StoryblokComponent
