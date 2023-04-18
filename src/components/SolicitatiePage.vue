@@ -1,26 +1,27 @@
 <template>
-  <section v-editable="blok" class="flex flex-col gap-6">
+  <section v-editable="blok" class="flex flex-col gap-1">
     <div
       class="header container my-4 mx-auto flex flex-col items-center justify-center gap-6 p-3"
     >
-      <div class="flex w-3/5 flex-col justify-between gap-4 self-start">
-        <router-link to="/" class="flex items-center gap-2 hover:animate-pulse"
+      <div
+        class="flex w-full flex-col justify-center gap-10 self-start md:justify-start md:gap-3"
+      >
+        <router-link
+          to="/"
+          class="flex w-2/5 items-center gap-2 hover:animate-pulse"
           ><img
             src="https://a.storyblok.com/f/196239/30x24/8b7ac5d55c/arrow-1.svg"
             alt="icon"
             class="w-[20px]"
           />
-          <p class="w-96 text-xs">back to home</p>
+          <p class="hidden w-96 text-xs sm:block">back to home</p>
         </router-link>
-        <h1 class="text-[30px] font-bold sm:text-[35px]">
-          {{ blok.name }}
-        </h1>
+        <div class="flex flex-col items-center gap-2">
+          <h1 class="text-[40px] font-black sm:text-[60px]">Stage Duracom</h1>
+          <h2>E-commerce Manager</h2>
+        </div>
       </div>
     </div>
-
-    <div
-      class="technieken container mx-auto flex flex-col items-center justify-center"
-    ></div>
 
     <StoryblokComponent
       v-for="blok in blok.solicitatiePage"
