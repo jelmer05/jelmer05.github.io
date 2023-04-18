@@ -1,0 +1,60 @@
+name: Dependency Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  push:
+    branches: [main]
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Check for Updates
+      run: ncu -u
+
+    - name: Commit Changes
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "you@example.com"
+        git add package.json package-lock.json
+        git commit -m "Update dependencies"
+        git push origin main
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: Update Dependencies
+        body: Automatically updated dependencies to the latest versions.
+        branch: dependency-update
+        base: main
+        token: ${{ secrets.TOKEN }}
+
+  deploy-to-netlify:
+    needs: [update-dependencies]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Deploy to Netlify
+      uses: netlify/actions/cli@master
+      with:
+        command: deploy
+        args: --prod
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
