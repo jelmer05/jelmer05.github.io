@@ -16,6 +16,8 @@ import Column from "./components/Column.vue";
 import ImgBlok from "./components/ImgBlok.vue";
 import Tekst from "./components/Tekst.vue";
 import Logos from "./components/Logos.vue";
+import Uitgelicht from "./components/Uitgelicht.vue";
+import ProjectUit from "./components/ProjectUit.vue";
 
 import previewProject from "./components/previewProject.vue";
 
@@ -26,6 +28,8 @@ app.component("Column", Column);
 app.component("ImgBlok", ImgBlok);
 app.component("Tekst", Tekst);
 app.component("Logos", Logos);
+app.component("Uitgelicht", Uitgelicht);
+app.component("ProjectUit", ProjectUit);
 
 app.component("infoText", infoText);
 app.component("Contact", Contact);
