@@ -3,7 +3,7 @@ import { RouterLink } from "vue-router";
 defineProps({ blok: Object });
 </script>
 <template>
-  <section v-editable="blok" class="flex flex-col gap-1">
+  <section v-editable="blok" class="flex flex-col gap-6">
     <div
       class="header container my-4 mx-auto flex flex-col items-center justify-center gap-6 p-3"
     >
