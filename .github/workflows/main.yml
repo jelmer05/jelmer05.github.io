@@ -2,7 +2,7 @@ name: Dependency Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
+    - cron: '0 0 * * 0' # Runs every Sunday at midnight
 jobs:
   update-dependencies:
     runs-on: ubuntu-latest
