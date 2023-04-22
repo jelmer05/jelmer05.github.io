@@ -22,7 +22,7 @@ console.log(blok.spiegel);
         />
       </div>
       <div
-        class="w-full md:order-2 md:w-5/12"
+        class="flex w-full items-center md:order-2 md:w-5/12"
         :class="{ 'order-1': blok.spiegel }"
       >
         <StoryblokComponent

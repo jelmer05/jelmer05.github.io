@@ -17,6 +17,9 @@ const jarenActief = begin + " - " + eind;
 </script>
 <template>
   <section class="flex w-4/5 flex-col justify-center gap-8 self-center">
+    <h1 v-if="blok.first" class="text-[30px] font-bold sm:text-[35px]">
+      Stageplekken
+    </h1>
     <div class="container flex flex-col items-center gap-4 md:flex-row">
       <div class="flex items-center justify-center sm:w-4/12">
         <div
