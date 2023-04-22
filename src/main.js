@@ -18,6 +18,8 @@ import Tekst from "./components/Tekst.vue";
 import Logos from "./components/Logos.vue";
 import Uitgelicht from "./components/Uitgelicht.vue";
 import ProjectUit from "./components/ProjectUit.vue";
+import Stageplek from "./components/Stageplek.vue";
+import School from "./components/School.vue";
 
 import previewProject from "./components/previewProject.vue";
 
@@ -30,6 +32,8 @@ app.component("Tekst", Tekst);
 app.component("Logos", Logos);
 app.component("Uitgelicht", Uitgelicht);
 app.component("ProjectUit", ProjectUit);
+app.component("Stageplek", Stageplek);
+app.component("School", School);
 
 app.component("infoText", infoText);
 app.component("Contact", Contact);

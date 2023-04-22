@@ -4,28 +4,33 @@ console.log(blok.spiegel);
 </script>
 
 <template>
-  <section
-    class="flex w-4/5 flex-col justify-between gap-3 self-center py-3 md:flex-row"
+  <div
+    class="background flex w-full justify-center self-center py-3"
+    :class="{ ' bg-blauw-theme': blok.background }"
   >
-    <div
-      class="md:order1 flex w-full items-center md:w-5/12"
-      :class="{ 'order-2': blok.spiegel }"
+    <section
+      class="flex w-4/5 flex-col justify-between gap-3 self-center py-3 md:flex-row"
     >
-      <StoryblokComponent
-        v-for="blok in blok.Links"
-        :blok="blok"
-        :key="blok._uid"
-      />
-    </div>
-    <div
-      class="w-full md:order-2 md:w-5/12"
-      :class="{ 'order-1': blok.spiegel }"
-    >
-      <StoryblokComponent
-        v-for="blok in blok.Rechts"
-        :blok="blok"
-        :key="blok._uid"
-      />
-    </div>
-  </section>
+      <div
+        class="md:order1 flex w-full items-center md:w-5/12"
+        :class="{ 'order-2': blok.spiegel }"
+      >
+        <StoryblokComponent
+          v-for="blok in blok.Links"
+          :blok="blok"
+          :key="blok._uid"
+        />
+      </div>
+      <div
+        class="w-full md:order-2 md:w-5/12"
+        :class="{ 'order-1': blok.spiegel }"
+      >
+        <StoryblokComponent
+          v-for="blok in blok.Rechts"
+          :blok="blok"
+          :key="blok._uid"
+        />
+      </div>
+    </section>
+  </div>
 </template>
