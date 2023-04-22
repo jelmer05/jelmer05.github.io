@@ -10,7 +10,6 @@ const begin = beginMaand + "/" + beginJaar;
 const eind = eindMaand + "/" + eindJaar;
 
 const jarenActief = begin + " - " + eind;
-console.log(jarenActief);
 </script>
 <template>
   <div class="flex flex-col gap-10 self-center sm:w-1/3">
