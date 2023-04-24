@@ -20,6 +20,7 @@ import Uitgelicht from "./components/Uitgelicht.vue";
 import ProjectUit from "./components/ProjectUit.vue";
 import Stageplek from "./components/Stageplek.vue";
 import School from "./components/School.vue";
+import Container from "./components/Container.vue";
 
 import previewProject from "./components/previewProject.vue";
 
@@ -34,6 +35,7 @@ app.component("Uitgelicht", Uitgelicht);
 app.component("ProjectUit", ProjectUit);
 app.component("Stageplek", Stageplek);
 app.component("School", School);
+app.component("Container", Container);
 
 app.component("infoText", infoText);
 app.component("Contact", Contact);
