@@ -1,6 +1,5 @@
 <script setup>
 const { blok } = defineProps({ blok: Object });
-console.log(blok.spiegel);
 </script>
 
 <template>

@@ -13,7 +13,7 @@ const eind = eindMaand + "/" + eindJaar;
 const jarenActief = begin + " - " + eind;
 </script>
 <template>
-  <div class="flex flex-col gap-10 self-center sm:w-1/3">
+  <div class="flex flex-col gap-10 self-center py-8 sm:w-1/3">
     <div class="flex flex-col gap-3">
       <p>{{ blok.preHeader }}</p>
       <h1 class="font-bold">{{ blok.titel }}</h1>

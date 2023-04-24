@@ -5,7 +5,7 @@ defineProps({ blok: Object });
   <div v-editable="blok">
     <StoryblokComponent
       v-for="blok in blok.content"
-      :blok="blok.content"
+      :blok="blok"
       :key="blok._uid"
     />
   </div>
