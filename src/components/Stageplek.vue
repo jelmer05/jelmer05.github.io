@@ -6,9 +6,10 @@ const { blok } = defineProps({ blok: Object });
 const articleContent = computed(() => renderRichText(blok.verhaal));
 
 const beginJaar = new Date(blok.Begin).getFullYear();
-const beginMaand = "0" + new Date(blok.Begin).getMonth();
+const beginMaand = ("0" + (new Date(blok.Begin).getMonth() + 1)).slice(-2);
+
 const eindJaar = new Date(blok.Eind).getFullYear();
-const eindMaand = "0" + new Date(blok.Eind).getMonth();
+const eindMaand = ("0" + (new Date(blok.Eind).getMonth() + 1)).slice(-2);
 
 const begin = beginMaand + "/" + beginJaar;
 const eind = eindMaand + "/" + eindJaar;
