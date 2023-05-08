@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-defineProps({ blok: Object });
+defineProps({ blok: Object, name: Object });
 </script>
 <template>
   <section v-editable="blok" class="flex flex-col gap-6">
@@ -21,7 +21,9 @@ defineProps({ blok: Object });
           <p class="hidden w-96 text-xs sm:block">back to home</p>
         </router-link>
         <div class="flex flex-col items-center gap-2 md:gap-6">
-          <h1 class="text-[40px] font-black sm:text-[60px]">Stage Duracom</h1>
+          <h1 class="text-[40px] font-black sm:text-[60px]">
+            Stageplek {{ name.name }}
+          </h1>
           <h2>E-commerce Manager</h2>
         </div>
       </div>

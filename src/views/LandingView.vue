@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { useStoryblok } from "@storyblok/vue";
 import PagenotFound from "./pageNotFoundView.vue";
@@ -16,9 +17,9 @@ try {
   console.error(`project ${searchSolicitatie} not found`);
 }
 
-console.log(story);
+const name = ref(story);
 </script>
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
+  <StoryblokComponent v-if="story" :blok="story.content" :name="name" />
   <PagenotFound v-else />
 </template>
