@@ -15,7 +15,7 @@
     "aos": "^2.3.4",
     "storyblok-js-client": "^5.10.6",
     "vue": "^3.3.4",
-    "vue-countup-v3": "^1.2.0",
+    "vue-countup-v3": "^1.3.0",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
