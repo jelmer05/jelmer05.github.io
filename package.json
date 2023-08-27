@@ -10,7 +10,7 @@
   "dependencies": {
     "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
     "@storyblok/js": "^2.2.11",
-    "@storyblok/vue": "^7.1.16",
+    "@storyblok/vue": "^7.1.17",
     "@vue/compiler-sfc": "^3.3.4",
     "aos": "^2.3.4",
     "storyblok-js-client": "^6.0.0",
@@ -19,7 +19,7 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.3.1",
+    "@vitejs/plugin-vue": "^4.3.3",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
