@@ -11,20 +11,20 @@
     "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
     "@storyblok/js": "^3.0.8",
     "@storyblok/vue": "^8.0.8",
-    "@vue/compiler-sfc": "^3.4.30",
+    "@vue/compiler-sfc": "^3.4.31",
     "aos": "^2.3.4",
     "storyblok-js-client": "^6.7.3",
-    "vue": "^3.4.30",
+    "vue": "^3.4.31",
     "vue-countup-v3": "^1.4.2",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.4",
-    "vite": "^5.3.1"
+    "vite": "^5.3.2"
   }
 }
