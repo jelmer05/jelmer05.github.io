@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@marvr/storyblok-rich-text-vue-renderer": "^2.0.1",
-    "@storyblok/js": "^3.2.5",
-    "@storyblok/vue": "^8.1.11",
+    "@storyblok/js": "^3.3.0",
+    "@storyblok/vue": "^8.2.0",
     "@vue/compiler-sfc": "^3.5.13",
     "aos": "^2.3.4",
     "storyblok-js-client": "^6.10.10",
@@ -19,12 +19,12 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue": "^5.2.3",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^4.0.15",
     "vite": "^6.2.2"
   }
 }
